@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Status Maker</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- start project -->
+  <div id="container">
+    <div id="actions">
+      <input type="text" id="input" placeholder="النص..." />
+      <input type="text" id="author" placeholder="الكاتب..." />
+      <button id="download">
+        <i class="fa-solid fa-download i"></i>
+      </button>
+      <button id="color">
+        <i class="fa-solid fa-palette i"></i>
+      </button>
+      <tc-range-slider id="range" min="10" max="50" value="30" round="0" step="1" moving-tooltip="true" moving-tooltip-distance-to-pointer="25" moving-tooltip-width="30" moving-tooltip-height="20" moving-tooltip-bg="#721d82" moving-tooltip-text-color="#ffffff"></tc-range-slider>
+    </div>
+    <div id="output">
+      <div id="text"></div>
+      <div id="name"></div>
+    </div>
+  </div>
+  <!-- end project -->
+  <script src="js/html2canvas.min.js"></script>
+  <script src="js/tooltip.min.js"></script>
+  <script src="js/range.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
