@@ -11,6 +11,7 @@
 * {
   box-sizing: border-box;
   font-family: "naskh", "arabic", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
