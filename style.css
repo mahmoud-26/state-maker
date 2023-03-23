@@ -1,16 +1,11 @@
 @font-face {
-  font-family: "arabic";
-  src: url("fonts/arabic.ttf");
-}
-
-@font-face {
-  font-family: "naskh";
-  src: url("fonts/naskh.woff");
+  font-family: "lateef";
+  src: url("fonts/lateef.ttf");
 }
 
 * {
   box-sizing: border-box;
-  font-family: "naskh", "arabic", sans-serif;
+  font-family: "lateef", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -46,7 +41,6 @@ body {
   border-radius: 5px;
   direction: rtl;
   transition: box-shadow 0.1s;
-  font-family: "arabic", sans-serif;
 }
 
 #input:focus,
@@ -83,16 +77,16 @@ body {
   width: 100%;
   height: auto;
   font-size: 30px;
-  padding: 30px;
-  line-height: 50px;
+  padding: 20px;
+  line-height: 40px;
   direction: rtl;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   background: none;
   user-select: none;
+  border-radius: 10px;
 }
 
 #name {

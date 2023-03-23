@@ -9,7 +9,9 @@ const text = document.getElementById("text");
 const name = document.getElementById("name");
 
 window.onload = () => {
-  randomColor();
+  //randomColor();
+  text.style.background = "#262626";
+  text.style.color = "white";
   input.value = localStorage.getItem("text");
   author.value = localStorage.getItem("name");
   text.innerHTML = localStorage.getItem("text");
@@ -29,7 +31,7 @@ author.addEventListener("input", () => {
 });
 
 download.addEventListener("click", () => {
-  html2canvas(output).then(function(canvas) {
+  html2canvas(text).then(function(canvas) {
     var anchorTag = document.createElement("a");
     document.body.appendChild(anchorTag);
     anchorTag.download = "image.png";
