@@ -96,3 +96,7 @@ body {
   color: ghostwhite;
   user-select: none;
 }
+
+span {
+  color: #EF233C;
+}
